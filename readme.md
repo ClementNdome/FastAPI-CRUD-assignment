@@ -64,6 +64,14 @@ PUT	/students/{id}	Update a student	{ "name": "New Name", "email": "new@mail.com
 DELETE	/students/{id}	Delete a student	–
 
 Courses
+| Method     | Endpoint        | Description      | Request Body (JSON)                                              |
+| ---------- | --------------- | ---------------- | ---------------------------------------------------------------- |
+| **POST**   | `/courses/`     | Create a course  | `{ "title": "Math 101", "description": "Intro to Math" }`        |
+| **GET**    | `/courses/`     | List all courses | –                                                                |
+| **PUT**    | `/courses/{id}` | Update a course  | `{ "title": "New Title", "description": "Updated description" }` |
+| **DELETE** | `/courses/{id}` | Delete a course  | –                                                                |
+
+
 Method	Endpoint	Description	Request Body (JSON)
 POST	/courses/	Create a course	{ "title": "Math 101", "description": "Intro to Math" }
 GET	/courses/	List all courses	–
