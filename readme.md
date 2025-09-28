@@ -31,28 +31,28 @@ for **Students** and **Courses** using **SQLite** and **SQLAlchemy**.
 git clone https://github.com/<your-username>/fastapi_crud_app.git
 cd fastapi_crud_app
 ```
-2️⃣ Create and activate a virtual environment
+### 2️⃣ Create and activate a virtual environment
 bash
-Copy code
 python -m venv venv
 # Windows
 venv\Scripts\activate
 # Linux/Mac
 source venv/bin/activate
-3️⃣ Install dependencies
-bash
-Copy code
+
+### 3️⃣ Install dependencies
+```python
 pip install -r requirements.txt
-4️⃣ Start the development server
-bash
-Copy code
+```
+### 4️⃣ Start the development server
+```bash
 uvicorn app.main:app --reload
-5️⃣ Access the API
+```
+### 5️⃣ Access the API
 Swagger UI → http://127.0.0.1:8000/docs
 
 ReDoc → http://127.0.0.1:8000/redoc
 
-🔗 API Endpoints
+## 🔗 API Endpoints
 Students
 Method	Endpoint	Description	Request Body (JSON)
 POST	/students/	Create a student	{ "name": "Alice", "email": "alice@mail.com" }
@@ -67,23 +67,21 @@ GET	/courses/	List all courses	–
 PUT	/courses/{id}	Update a course	{ "title": "New Title", "description": "Updated description" }
 DELETE	/courses/{id}	Delete a course	–
 
-🧪 Example Requests
+### Example Requests
 Create a Student:
 
-bash
-Copy code
+
+```bash
 curl -X POST http://127.0.0.1:8000/students/ \
 -H "Content-Type: application/json" \
 -d '{"name":"Alice","email":"alice@mail.com"}'
+```
 Fetch All Courses:
 
-bash
-Copy code
+```bash
 curl http://127.0.0.1:8000/courses/
-📝 Notes
-Database file crud.db is auto-created on first run.
-
-For production, replace SQLite with PostgreSQL or MySQL in app/database.py.
-
-Pydantic v2 is used; the config key from_attributes replaces the old orm_mode.
+```
+## Notes
+- Database file crud.db is auto-created on first run.
+- Pydantic v2 is used; the config key from_attributes replaces the old orm_mode.
 
