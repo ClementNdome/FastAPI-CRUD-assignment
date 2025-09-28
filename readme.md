@@ -30,6 +30,7 @@ for **Students** and **Courses** using **SQLite** and **SQLAlchemy**.
 ```bash
 git clone https://github.com/<your-username>/fastapi_crud_app.git
 cd fastapi_crud_app
+```
 2️⃣ Create and activate a virtual environment
 bash
 Copy code
