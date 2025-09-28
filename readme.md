@@ -34,11 +34,14 @@ cd fastapi_crud_app
 ### 2️⃣ Create and activate a virtual environment
 bash
 python -m venv venv
-# Windows
+##### Windows
+```bash
 venv\Scripts\activate
-# Linux/Mac
+```
+##### Linux/Mac
+```bash
 source venv/bin/activate
-
+```
 ### 3️⃣ Install dependencies
 ```python
 pip install -r requirements.txt
